@@ -37,6 +37,10 @@
     </style>
 </head>
 <body>
+    <section>
+        <img src="abacus 1 image.jpg" class="my_slides" style="height: 550px; width: 100%;">
+        <img src="pama compition.jpg" class="my_slides" style="height: 550px; width: 100%;">
+    </section>
     <div class="topnav">
         <a href="#home" class="active">Home</a>
         <a href="#">Abacus</a>
@@ -45,11 +49,30 @@
         <a href="#">Resistation</a>
 
     </div>
-
+    
 
 
     <script>
-        
+     var index = 0 ;
+     carousel()
+    function carousel()
+    {
+        var i ;
+        var x = document.getElementsByClassName("my_slides") ;
+        for(i = 0 ; i < x.length ; i ++ )
+        {
+            x[i].style.display = "none" ;
+        }
+    
+        index = index + 1
+        if(index>x.length)
+        {
+            index = 1
+        }
+        x[index-1].style.display="block"
+        setTimeout(carousel,3000)
+
+    }
     </script>
 </body>
 </html>
