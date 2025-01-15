@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upbeat Brain Game Academy</title>
+
+    <style>
+        body {
+            background-color: rgb(241, 237, 154);
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #d9534f;
+            border-bottom: 2px solid #d9534f;
+            padding-bottom: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 20px 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 550px;
+            display: block;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: cadetblue;
+            padding: 10px 0;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .topnav a.active {
+            background-color: rgb(36, 36, 90);
+            color: bisque;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(31, 184, 171);
+            color: rgb(177, 114, 36);
+        }
+
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #100a18;
+            color: rgb(234, 223, 165);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        section {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slideshow Section -->
+    <section>
+        <img src="abacus 1 image.jpg" class="my_slides" alt="Abacus Image">
+        <img src="upbeat logo.jpg" class="my_slides" alt="Upbeat Logo">
+    </section>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="abacus.html">Abacus</a>
+        <a href="Students.html">Students Review</a>
+        <a href="competition.html">Competition</a>
+        <a href="Resistation.html">Registration</a>
+        <a href="Franchise.html" class="active">Franchise</a>
+    </div>
+
+    <!-- Content Section -->
+    <div>
+        <h1>Welcome to <b>Upbeat Brain Game Academy</b></h1>
+        <h2>About Us</h2>
+        <p>
+            At Upbeat Brain Game Academy, we pride ourselves on completing 5 successful years and launching our new
+            website.
+            We have taught over 250 students. Our commitment to excellence has made us a leader in this field.
+        </p>
+
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><b>Brand Recognition:</b> Join a well-established brand with a loyal customer base.</li>
+            <li><b>Comprehensive Training:</b> We provide extensive training to ensure your success.</li>
+            <li><b>Ongoing Support:</b> Our team supports you at every step of the way.</li>
+            <li><b>Proven Business Model:</b> Benefit from a business model tested and refined over the years.</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>
+            <b>Phone:</b> [Phone Number]<br>
+            <b>Email:</b> [Email Address]<br>
+            <b>Address:</b> [Physical Address]
+        </p>
+    </div>
+
+    <!-- Slideshow Script -->
+    <script>
+        let index = 0;
+        carousel();
+
+        function carousel() {
+            const slides = document.getElementsByClassName("my_slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            index++;
+            if (index > slides.length) {
+                index = 1;
+            }
+            slides[index - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Upbeat Brain Game Academy<br>All rights reserved by Takshvi Kawale and Prachi Kawale.</p>
+    </div>
+</body>
+
+</html>
