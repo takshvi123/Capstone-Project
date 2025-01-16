@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #d9534f;
+            border-bottom: 2px solid #d9534f;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .topnav {
+
+            overflow: hidden;
+            background-color: cadetblue;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: double;
+            font-size: 18px;
+        }
+
+        .topnav a.active {
+            background-color: rgb(36, 36, 90);
+            color: bisque;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(31, 184, 171);
+            color: rgb(177, 114, 36);
+        }
+
+        .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #100a18;
+            color: rgb(234, 223, 165);
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(241, 237, 154);">
+    <section>
+        <img src="abacus 1 image.jpg" class="my_slides" style="height: 550px; width: 100%;">
+        <img src="upbeat_logo.jpg" class="my_slides" style="height: 550px; width: 100%;">
+    </section>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="abacus .html">Abacus</a>
+        <a href="Students.html">Students Review</a>
+        <a href="competition.html" class="active">Competition</a>
+        <a href="Resistation.html">Resistation</a>
+        <a href="Franchise.html">Franchise</a>
+
+    </div>
+    <div class="container">
+
+    </div>
+
+    <script>
+        var index = 0;
+        carousel()
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("my_slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            index = index + 1
+            if (index > x.length) {
+                index = 1
+            }
+            x[index - 1].style.display = "block"
+            setTimeout(carousel, 3000)
+
+        }
+    </script>
+    <div class="footer">
+        <p>&copy; copyright owned by Takshvi Kawale and Prachi Kawale
+            <br>
+            All rights resevered
+
+        </p>
+    </div>
+</body>
+
+</html>
