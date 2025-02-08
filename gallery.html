@@ -19,7 +19,165 @@
         }
 
         h1 {
+            color: #d9534f;<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
             color: #d9534f;
+            border-bottom: 2px solid #d9534f;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .topnav {
+
+            overflow: hidden;
+            background-color: cadetblue;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: double;
+            font-size: 18px;
+        }
+
+        .topnav a.active {
+            background-color: rgb(36, 36, 90);
+            color: bisque;
+        }
+
+        .topnav a:hover {
+            background-color: rgb(31, 184, 171);
+            color: rgb(177, 114, 36);
+        }
+         .footer{
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #100a18;
+            color: rgb(234, 223, 165);
+            text-align: center;
+           
+        }
+        .container{
+            text-align: center;
+            padding: 20px;
+
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+        }
+        .gallery img{
+            width: 100%;
+            border-radius: 8.765px;
+            box-shadow:0 4px 8px #333;
+            transition: transform 0.3s;
+        }
+    </style>
+    </head>
+    
+    <body style="background-color: rgb(241, 237, 154);">
+        <section>
+            <img src="abacus 1 image.jpg" class="my_slides" style="height: 550px; width: 100%;">
+            <img src="upbeat_logo.jpg" class="my_slides" style="height: 550px; width: 100%;">
+        </section>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="abacus .html">Abacus</a>
+            <a href="Students.html">Students Review</a>
+            <a href="galleryfake.html" class="active">Gallery</a>
+            <a href="Resistation.html">Resistation</a>
+            <a href="Franchise.html">Franchise</a>
+    
+        </div>
+        <div class="container">
+            <H1>
+                Welcome to our Gallery
+            </H1>
+            <h3>hear are some images from 2023 pama internatial compitition</h3>
+            <div class="gallery">
+                <img src="competition-website-1.jpg">
+                <img src="competition-website-2.jpg">
+                <img src="competition-website-3.jpg">
+                <img src="competition-website-4.jpg">
+                <img src="competition-website-5.jpg">
+                <img src="competition-website-6.jpg">
+                <img src="competition-website-7.jpg">
+                <img src="competition-website-8.jpg">
+                <img src="competition-website-9.jpg">
+                <img src="10.jpg">
+                <img src="competition-website-11.jpg">
+    
+            </div>
+        </div>
+    
+        <script>
+            var index = 0;
+            carousel()
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("my_slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+
+                index = index + 1
+                if (index > x.length) {
+                    index = 1
+                }
+                x[index - 1].style.display = "block"
+                setTimeout(carousel, 3000)
+
+            }
+        </script>
+        <div class="footer">
+            <p>&copy; copyright owned by Takshvi Kawale and Prachi Kawale
+                <br>
+                All rights resevered
+    
+            </p>
+        </div>
+    </body>
+    
+    </html>
             border-bottom: 2px solid #d9534f;
             padding-bottom: 10px;
         }
